@@ -53,13 +53,13 @@ To ensure fast, low-latency performance even at this scale, the system uses a 3-
 
 🧠 **Mega-Request Engine:** Polars’ `pl.collect_all()` runs multiple calculations in parallel across CPU cores, avoiding repeated dataset scans.
 
+[↑ Back to Table of Contents](#table-of-contents)
+
 ---
 
 ## 🏗 Architecture <a id="architecture"></a>
 
 All chart requests are processed through a single optimized query pipeline, resolving analytics in parallel and updating the reactive UI efficiently.
-
-
 
 ### 🔁 Data Flow
 
@@ -368,20 +368,21 @@ The sidebar acts as the primary "Command Center," utilizing Polars' Lazy Evaluat
 
 #### **1. AI-based job title clustering (Sentence Transformers / BERTopic)**
   
-Convert raw job titles into semantic embeddings and cluster them to standardize inconsistent naming. This improves aggregation accuracy and workforce taxonomy clarity.
+- Convert raw job titles into semantic embeddings and cluster them to standardize inconsistent naming. This improves aggregation accuracy and workforce taxonomy clarity.
 
 #### **2. Automated skills extraction via NER for skill-gap analysis**
   
-Use NER models to extract structured skills from job descriptions. This enables skill-demand tracking and quantitative skill-gap analysis.  
-**Note:** Named Entity Recognition (NER) is a natural language processing (NLP) technique that identifies and classifies key information (entities) in text into predefined categories.
+- Use NER models to extract structured skills from job descriptions. This enables skill-demand tracking and quantitative skill-gap analysis.  
+
+- **Note:** Named Entity Recognition (NER) is a natural language processing (NLP) technique that identifies and classifies key information (entities) in text into predefined categories.
 
 #### **3. Labor shortage forecasting with Prophet or XGBoost**
   
-Apply time-series or machine learning models to predict hiring demand and recruitment friction. Supports proactive workforce planning.
+- Apply time-series or machine learning models to predict hiring demand and recruitment friction. Supports proactive workforce planning.
 
 #### **4. Cloud deployment with scheduled ETL pipelines**
   
-Automate data ingestion, transformation, and model updates in the cloud. Ensures scalable, production-ready analytics with regular refresh cycles.
+- Automate data ingestion, transformation, and model updates in the cloud. Ensures scalable, production-ready analytics with regular refresh cycles.
 
 [↑ Back to Table of Contents](#table-of-contents)
 
@@ -436,7 +437,7 @@ Using Docker to run your Streamlit dashboard is recommended because it packages 
 * `.dockerignore` - Prevents unnecessary files from being copied into the Docker image, making builds faster and smaller.
 * `SGJobData.csv`
   
-> **Note:** CSV dataset is not included in the repo due to confidentiality. If you do not have access to the dataset, you can view the [live demo](https://huggingface.co/spaces/Miqqie/job) instead.
+> **Note:** The CSV dataset is not included in the repo due to confidentiality. If you do not have access to the dataset, you can view the [live demo](https://huggingface.co/spaces/Miqqie/job) instead.
 
 3. **Launch the Dashboard**
 
