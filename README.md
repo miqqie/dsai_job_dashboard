@@ -81,7 +81,8 @@ Each layer is isolated to prevent performance slowdowns.
 
 ## 📈 Performance Engineering With Polars <a id="performance-engineering"></a>
 
-<img width="2752" height="1536" alt="unnamed (8)" src="https://github.com/user-attachments/assets/2ec53f92-7b99-4c3b-bbd3-da1f702d3db7" />
+<img width="2752" height="1536" alt="unnamed (8)" src="https://github.com/user-attachments/assets/8a4da076-7562-4bbc-8473-bad473b0027e" />
+
 
 <details>
 <summary>📈 Benchmarking, Key Polar Techniques & Why Pandas Is Still Needed (Expand for more details)</summary>
@@ -311,7 +312,8 @@ lf = lf.with_columns(
 
 ## 📊 Dashboard Capabilities <a id="dashboard-capabilities"></a>
 
-<img width="2752" height="1536" alt="unnamed (9)" src="https://github.com/user-attachments/assets/de02bade-1ae9-466e-82ef-5c660e243c2c" />
+<img width="2752" height="1536" alt="unnamed (9)" src="https://github.com/user-attachments/assets/bd9a9448-62ce-4944-908d-61a1a969cd4d" />
+
 
 <details>
 <summary>📊 Dashboard Overview & Features (Expand for more details) </summary>
