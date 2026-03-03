@@ -1,0 +1,14 @@
+name: sg_job_market
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - streamlit=1.37.1      # Required for @st.fragment used in the sectoral table
+  - polars=1.37.1         # Core engine for high-performance data processing
+  - pandas=1.5.3          # Required for UI rendering and Plotly compatibility
+  - plotly=5.19.0         # Core visualization library
+  - numpy=1.26.4          # Numerical operations
+  - pip
+  - pip:
+    - plotly-express         # Ensures full capability for high-level charts

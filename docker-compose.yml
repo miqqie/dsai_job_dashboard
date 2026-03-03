@@ -1,0 +1,13 @@
+services:
+  dashboard:                  # Defines the name of the container service
+    build: .                  # Tells Docker to build the image using the local Dockerfile
+    ports:
+      - "8501:8501"           # Maps host port 8501 to container port 8501 for web access
+    volumes:
+      - .:/app                # Syncs local code to the container for real-time development
+    environment:
+      - STREAMLIT_SERVER_RUN_ON_SAVE=true   # Automatically reloads the app when you save code
+      - STREAMLIT_SERVER_HEADLESS=true      # Prevents Streamlit from trying to open a browser inside the container
+      - STREAMLIT_WATCH_EXCHANGES=true      # Ensures file changes are detected across the Docker volume
+    stdin_open: true          # Keeps the standard input open (useful for interactive debugging)
+    tty: true                 # Allocates a virtual terminal to keep the container running

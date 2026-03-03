@@ -1,0 +1,6 @@
+streamlit==1.37.1      # Main framework for the web interface and layout
+polars==1.37.1         # Fast engine for heavy data processing and filtering
+pandas==1.5.3          # Utility library for data cleaning and legacy support
+plotly==5.19.0         # Library for interactive charts and data visualizations
+numpy==1.26.4          # Backend for fast numerical logic and array math
+pyarrow                # Required for high-speed Parquet data loading
