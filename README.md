@@ -394,7 +394,7 @@ The sidebar acts as the primary "Command Center," utilizing Polars' Lazy Evaluat
 
 ### Option 1: Local Environment Setup (Conda)
 
-1. **Install the Requirements**
+1. **Clone the Repo and Install the Requirements**
 
 ```bash
 conda env create --file environment.yml
@@ -431,7 +431,7 @@ Using Docker to run your Streamlit dashboard is recommended because it packages 
 
 1. **Prerequisites**: Docker Desktop installed and running
 
-2. **File Setup**: Ensure these files are in the project folder:
+2. **File Setup**: Clone the repo and ensure these files are in the project folder:
 
 * `Dockerfile` – Instructions to build the Docker image (base image, dependencies, run command).
 * `docker-compose.yml` – Defines and runs multi-container services with ports and settings.
