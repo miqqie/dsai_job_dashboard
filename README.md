@@ -306,6 +306,15 @@ lf = lf.with_columns(
 )
 ```
 
+### 4. Data Integrity & Noise Reduction (Nulls and Duplicates)
+
+**Challenge:** Incomplete metadata and duplicate job entries (e.g., reposts or identical roles across sub-sectors) threaten the accuracy of vacancy counts and competition ratios.
+
+**Solution:** The pipeline implements a strict **Multi-Stage Data Hardening** strategy. Critical records missing temporal data are eliminated using `.drop_nulls("metadata_jobPostingDate")`, while missing categorical data is preserved through default labeling (`.fill_null("General / Others")`) to maintain sample size without losing context. To handle duplicates, the system distinguishes between **Market Activity** (counting every post for KPI metrics) and **Structural Analysis**, where `.unique(subset=["category", "lower_title"])` is used to identify distinct roles. Furthermore, statistical noise is mitigated by filtering out bulk-hire outliers (entries with ≥10 vacancies) and zero-salary artifacts, ensuring that dashboard visualizations reflect realistic market trends rather than data entry anomalies.
+
+
+
+
 [↑ Back to Table of Contents](#table-of-contents)
 
 ---
