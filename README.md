@@ -81,7 +81,7 @@ Each layer is isolated to prevent performance slowdowns.
 
 ## 📈 Performance Engineering With Polars <a id="performance-engineering"></a>
 
-<img width="2752" height="1536" alt="unnamed (8)" src="https://github.com/user-attachments/assets/8a4da076-7562-4bbc-8473-bad473b0027e" />
+![polars](polars.png)
 
 
 <details>
