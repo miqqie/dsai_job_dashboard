@@ -321,7 +321,7 @@ lf = lf.with_columns(
 
 ## 📊 Dashboard Capabilities <a id="dashboard-capabilities"></a>
 
-<img width="2752" height="1536" alt="unnamed (9)" src="https://github.com/user-attachments/assets/bd9a9448-62ce-4944-908d-61a1a969cd4d" />
+![high_performance_dashboard_features.png](high_performance_dashboard_features.png)
 
 
 <details>
